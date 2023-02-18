@@ -17,23 +17,21 @@
 // (test === true) ? console.log('+++'): console.log('---');
 
 //Задание 3
-// let day = Number(prompt('Введите любое число от 1 до 31'));
-// if (day < 1 || day > 31) {
-//     console.log('Число введено некорректно, введите любое число от 1 до 31');
-// }
-// if (day > 0 && day < 11) {
-//     console.log('Первая декада');
-// }
-// if (day < 21 && day > 10) {
-//     console.log('Вторая декада');
-// }
-// if (day < 32 && day > 20) {
-//     console.log('Третья декада');
-// }
+let day = Math.floor(Math.random()*31) + 1;
+if (day < 1 || day > 31) {
+    console.log('Число введено некорректно, введите любое число от 1 до 31');
+} else if (day > 0 && day < 11) {
+    console.log('Первая декада');
+} else if (day < 21 && day > 10) {
+    console.log('Вторая декада');
+} else {
+    console.log('Третья декада');
+}
+console.log(day);
 
 //Задание 4
-let userNumber = Number(prompt('Введите любое положительное целое число'));
-let unitUserNumber = userNumber % 10;
-let decadeUserNumber = Math.floor((userNumber / 10) % 10);
-let hundredUserNumber = Math.floor((userNumber / 100) % 10);
-console.log(`В числе ${userNumber} количество сотен: ${hundredUserNumber}, десятков: ${decadeUserNumber}, единиц: ${unitUserNumber}`);
+// let userNumber = parseInt(prompt('Введите любое положительное целое число'));
+// let unitUserNumber = userNumber % 10;
+// let decadeUserNumber = parseInt((userNumber / 10) % 10);
+// let hundredUserNumber = parseInt((userNumber / 100) % 10);
+// console.log(`В числе ${userNumber} количество сотен: ${hundredUserNumber}, десятков: ${decadeUserNumber}, единиц: ${unitUserNumber}`);
