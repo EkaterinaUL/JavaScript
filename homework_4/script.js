@@ -7,11 +7,11 @@
 // …
 // 10 – четное число
 
-// for (let i = 0; i < 11; i++) {
-//     if (i % 2 === 0) {
-//         console.log(`${i} - четное число`);
+// for (let number = 0; number < 11; number++) {
+//     if (number % 2 === 0) {
+//         console.log(`${number} - четное число`);
 //     } else {
-//         console.log(`${i} - нечетное число`);
+//         console.log(`${number} - нечетное число`);
 //     }
     
 // }
@@ -23,14 +23,8 @@
 // const arrayNumber = [1, 2, 3, 4, 5, 6, 7];
 // const newFirstArray = arrayNumber.slice(0,3);
 // const newSecondArray = arrayNumber.slice(5,7);
-// const newArray = [];
-// for (let i = 0; i < newFirstArray.length; i++) {
-//     newArray.push(newFirstArray[i]);  
-// }
-// for (let i = 0; i < newSecondArray.length; i++) {
-//     newArray.push(newSecondArray[i]);  
-// }
-// console.log(newArray);
+// for (let i = 0; i < newSecondArray.length; i++) newFirstArray.push(newSecondArray[i]);
+// console.log(newFirstArray);
 
 
 // Задание 3
@@ -41,21 +35,17 @@
 
 // const arr = [];
 // let size = 5;
+// for (let i = 0; i < size; i++) arr.push(Math.floor(Math.random()*10));
+
 // let sum = 0;
 // let result = 'В массиве нет числа 3';
-// for (let i = 0; i < size; i++) {
-//     arr.push(Math.floor(Math.random()*10));
-// }
-// minElement = arr[0];
+// let minElement = arr[0];
 // for (let i = 0; i < arr.length; i++) {
-//     sum = sum + arr[i];
-//     if (arr[i] < minElement) {
-//         minElement = arr[i];
-//     }
-//     if (arr[i] === 3) {
-//         result = 'В массиве есть число 3';
-//     }
+//     sum += arr[i];
+//     if (arr[i] < minElement) minElement = arr[i];
+//     if (arr[i] === 3) result = 'В массиве есть число 3';
 // }
+
 // console.log(arr);
 // console.log(`Сумма элементов массива равна: ${sum}`);
 // console.log(`Минимальное число в массиве: ${minElement}`);
@@ -70,9 +60,9 @@
 // xxxx
 // xxxxx
 
-stringX = 'x';
+let stringX = 'x';
 for (let i = 0; i < 21; i++) {
     console.log(stringX);
-    stringX = stringX + 'x';
+    stringX  += 'x';
     
 }
